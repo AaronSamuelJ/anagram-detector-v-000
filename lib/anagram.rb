@@ -5,7 +5,7 @@ class Anagram
     @name = name
   end
   def match(words)
-    words.detect do |word|
+    words.find do |word|
       word.split("").sort == @name.split("").sort ? word : []
     end
   end
