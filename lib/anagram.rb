@@ -8,12 +8,12 @@ class Anagram
     found = nil
     array = []
     words.each do |word|
-
       if word.split("").sort == @name.split("").sort
         array << word
       else
         array
       end
     end
+    array
   end
 end
