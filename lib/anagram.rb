@@ -6,9 +6,14 @@ class Anagram
   end
   def match(words)
     found = nil
+    array = []
     words.each do |word|
-      binding.pry
-      word.split("").sort == @name.split("").sort ? found = word : []
+    
+      if word.split("").sort == @name.split("").sort 
+        array << word
+      else
+        array
+      end
     end
   end
 end
